@@ -5,6 +5,7 @@
   background-color: #fff;
   max-width: 529px;
   transition: all 0.2 ease-in-out;
+  background-color: #D5F5E3;
 }
 
 .card:hover {
@@ -24,4 +25,19 @@
 
 .card-inner {
   padding: 10px;
+}
+
+.fondo{
+  background: rgb(66, 159, 89);
+  background: linear-gradient(
+    90deg,
+    rgba(66, 159, 89, 0.958420868347339) 61%,
+    rgba(62, 173, 75, 1) 66%,
+    rgba(45, 241, 5, 1) 90%
+  );
+
+}
+
+.texto-color {
+  color: #28b463;
 }

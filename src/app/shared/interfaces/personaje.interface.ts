@@ -6,6 +6,8 @@ export interface Personaje {
   gender: Gender;
   image: string;
   created: Date;
+  origin:  Location;
+  location: Location;
 }
 
 export enum Status {
@@ -27,4 +29,9 @@ export enum Gender {
 
 export interface RequesInfo {
   next: string | null;
+}
+
+export interface Location {
+  name: string;
+  url: string;
 }

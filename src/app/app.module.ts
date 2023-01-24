@@ -1,3 +1,4 @@
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -18,6 +19,6 @@ import { PersonajesModule } from "./components/pages/personajes/personajes.modul
     ],
     providers: [],
     bootstrap: [AppComponent],
-    imports: [BrowserModule, AppRoutingModule, HttpClientModule, PersonajesModule]
+    imports: [BrowserModule, AppRoutingModule, HttpClientModule, PersonajesModule ]
 })
 export class AppModule {}

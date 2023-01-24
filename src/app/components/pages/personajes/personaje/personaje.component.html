@@ -1,1 +1,31 @@
-<p>personaje works!</p>
+<div class="row justify-content-center mt-3" *ngIf="character | async as personaje">
+  <div class="col-xs-12 col-sm-6 col-md-6">
+    <div class="card">
+      <div class="image">
+        <img
+          [src]="personaje.image"
+          [alt]="personaje.name"
+          class="card-img-top"
+        />
+      </div>
+
+      <div class="card-inner">
+        <div class="header">
+          <h2 class="titulo-color">{{ personaje.name }}</h2>
+
+          <h4 class="texto-color">Especie: {{ personaje.species }}</h4>
+          <h4 class="texto-color">Planeta de origen: {{ personaje.origin.name }}</h4>
+          <h4 class="texto-color">Genero: {{ personaje.gender }}</h4>
+          
+          <h4 class="texto-color">Estado: {{ personaje.status }}</h4>
+          <small class="texto-color">Creado: {{ personaje.created | date }}</small>
+         
+          
+        </div>
+      </div>
+    </div>
+
+   
+</div>
+
+<button (click)="goBack()" class="btn btn-primary btn-lg m-3">Back</button>
